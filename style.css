@@ -65,7 +65,7 @@ header {
   padding: 8px 12px;
   border-radius: 999px;
   border: 1px solid var(--border);
-  background-color: #020617;
+  background-color: var(--bg-main);
   color: var(--text-main);
   font-size: 14px;
 }
@@ -88,7 +88,7 @@ header {
 .category-bar {
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
-  background-color: #020617;
+  background-color: var(--bg-main);
 }
 
 .category-list {
@@ -120,7 +120,7 @@ main {
   padding: 18px;
   border-radius: 12px;
   border: 1px solid var(--border);
-  background: linear-gradient(135deg, #020617, #0f172a);
+  background: linear-gradient(135deg, var(--bg-main), #0f172a);
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
@@ -201,7 +201,7 @@ main {
   height: 110px;
   border-radius: 6px;
   margin-bottom: 8px;
-  background: radial-gradient(circle at top, #1d4ed8, #020617);
+  background: radial-gradient(circle at top, #1d4ed8, var(--bg-main));
 }
 
 .product-name {
@@ -256,7 +256,7 @@ main {
   margin-bottom: 10px;
   border-radius: 6px;
   border: 1px solid var(--border);
-  background-color: #020617;
+  background-color: var(--bg-main);
   color: var(--text-main);
   font-size: 13px;
 }
@@ -271,7 +271,7 @@ main {
   border-radius: 999px;
   border: none;
   background-color: var(--accent);
-  color: #020617;
+  color: var(--bg-main);
   font-weight: bold;
   font-size: 13px;
 }
