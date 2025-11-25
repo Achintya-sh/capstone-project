@@ -241,8 +241,17 @@ main {
   height: 110px;
   border-radius: 6px;
   margin-bottom: 8px;
+
+  /* existing gradient “fake image” background */
   background: radial-gradient(circle at top, #1d4ed8, var(--bg-main));
+
+  /* center the emoji as if it’s an image */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
 }
+
 
 .product-name {
   font-weight: bold;
