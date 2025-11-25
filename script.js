@@ -17,9 +17,9 @@ document.addEventListener("DOMContentLoaded", () => {
       // Show / hide products
       productCards.forEach(card => {
         if (category === "all" || card.dataset.category === category) {
-          card.style.display = "block";
+        card.style.display = "";        // back to grid mode
         } else {
-          card.style.display = "none";
+        card.style.display = "none";    // hide
         }
       });
     });
