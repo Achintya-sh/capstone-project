@@ -29,13 +29,14 @@
   <div class="category-bar">
     <div class="container">
       <ul class="category-list">
-        <li><a href="products.html" class="active-category">All</a></li>
-        <li><a href="products.html">Mobiles</a></li>
-        <li><a href="products.html">Laptops</a></li>
-        <li><a href="products.html">Audio</a></li>
-        <li><a href="products.html">Gaming</a></li>
-        <li><a href="products.html">Accessories</a></li>
+        <li><a href="#" data-category="all" class="active-category">All</a></li>
+        <li><a href="#" data-category="Mobiles">Mobiles</a></li>
+        <li><a href="#" data-category="Laptops">Laptops</a></li>
+        <li><a href="#" data-category="Audio">Audio</a></li>
+        <li><a href="#" data-category="Gaming">Gaming</a></li>
+        <li><a href="#" data-category="Accessories">Accessories</a></li>
       </ul>
+
 
     </div>
   </div>
@@ -49,7 +50,7 @@
 
   <section class="product-row">
   <!-- AUDIO -->
-    <article class="product-card">
+    <article class="product-card" data-category="Audio">
       <div class="product-image">🎧</div>
       <div class="product-name">Nebula Wireless Headphones</div>
       <div class="product-price">₹3,499</div>
@@ -57,7 +58,7 @@
       <span class="product-btn">Add to Cart</span>
     </article>
 
-    <article class="product-card">
+    <article class="product-card" data-category="Audio">
       <div class="product-image">🔊</div>
       <div class="product-name">EchoBar Mini Soundbar</div>
       <div class="product-price">₹2,799</div>
@@ -66,7 +67,7 @@
     </article>
 
   <!-- WEARABLES -->
-    <article class="product-card">
+    <article class="product-card" data-category="Mobiles">
       <div class="product-image">⌚</div>
       <div class="product-name">Pulse Smartwatch X</div>
       <div class="product-price">₹2,199</div>
@@ -75,7 +76,7 @@
     </article>
 
   <!-- LAPTOPS -->
-    <article class="product-card">
+    <article class="product-card" data-category="Laptops"> 
       <div class="product-image">💻</div>
       <div class="product-name">Orion Ultrabook 14&quot;</div>
       <div class="product-price">₹62,999</div>
@@ -84,7 +85,7 @@
     </article>
 
   <!-- PERIPHERALS -->
-    <article class="product-card">
+    <article class="product-card" data-category="Accessories">
       <div class="product-image">⌨️</div>
       <div class="product-name">Nova Mechanical Keyboard</div>
       <div class="product-price">₹4,799</div>
@@ -92,7 +93,7 @@
       <span class="product-btn">Add to Cart</span>
     </article>
 
-    <article class="product-card">
+    <article class="product-card" data-category="Accessories">
       <div class="product-image">🖱️</div>
       <div class="product-name">Orbit Wireless Mouse</div>
       <div class="product-price">₹899</div>
@@ -101,7 +102,7 @@
     </article>
 
   <!-- CHARGING -->
-    <article class="product-card">
+    <article class="product-card" data-category="Accessories">
       <div class="product-image">🔌</div>
       <div class="product-name">Flux USB-C Charger 30W</div>
       <div class="product-price">₹1,099</div>
@@ -110,7 +111,7 @@
     </article>
 
   <!-- MOBILES -->
-    <article class="product-card">
+    <article class="product-card" data-category="Mobiles">
       <div class="product-image">📱</div>
       <div class="product-name">Quantum One 5G</div>
       <div class="product-price">₹29,999</div>
@@ -119,7 +120,7 @@
     </article>
 
   <!-- GAMING -->
-    <article class="product-card">
+    <article class="product-card" data-category="Gaming">
       <div class="product-image">🎮</div>
       <div class="product-name">Astra Pro Gamepad</div>
       <div class="product-price">₹2,499</div>
@@ -128,7 +129,7 @@
     </article>
 
   <!-- ACCESSORIES -->
-    <article class="product-card">
+    <article class="product-card" data-category="Accessories">
       <div class="product-image">🎒</div>
       <div class="product-name">Ion Laptop Backpack</div>
       <div class="product-price">₹1,299</div>
@@ -142,6 +143,6 @@
 <footer>
   © 2025 NexusCart · <a href="contact.html" style="color:#38bdf8;">Contact Us</a>
 </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
