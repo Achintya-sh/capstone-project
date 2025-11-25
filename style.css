@@ -90,10 +90,56 @@ header {
 
 
 .logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   font-size: 22px;
-  font-weight: bold;
-  color: var(--accent);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
+
+/* CSS-only circular mark with glow */
+.logo-mark {
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  background: radial-gradient(circle at 30% 30%, #ffffff, #38bdf8 45%, #0f172a 80%);
+  box-shadow:
+    0 0 0 2px rgba(56, 189, 248, 0.3),
+    0 0 18px rgba(56, 189, 248, 0.8);
+}
+
+/* Gradient text */
+.logo-text {
+  background: linear-gradient(120deg, #e5f2ff, #38bdf8, #5eead4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+/* Slight difference between “Nexus” and “Cart” */
+.logo-primary {
+  font-weight: 800;
+}
+
+.logo-secondary {
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+/* Small hover animation for the whole logo */
+.logo:hover .logo-mark {
+  transition: box-shadow 0.18s ease-out;
+}
+
+
+.logo:hover .logo-text {
+  filter: brightness(1.1);
+  transition: filter 0.18s ease-out;
+}
+
 
 .search {
   flex: 1;
@@ -125,6 +171,8 @@ header {
 }
 
 /* CATEGORY BAR */
+
+
 .category-bar {
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
@@ -148,6 +196,14 @@ header {
 .category-list li a:hover {
   color: var(--accent);
 }
+
+.category-list a.active-category {
+  color: var(--accent);
+  font-weight: 600;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 2px;
+}
+
 
 /* MAIN LAYOUT */
 main {
