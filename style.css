@@ -7,14 +7,18 @@
 
 /* THEME */
 :root {
-  --bg-main: #020617;
-  --bg-card: #0b1120;
-  --border: #1f2937;
-  --accent: #38bdf8;
-  --accent-soft: #0ea5e9;
-  --text-main: #e5e7eb;
-  --text-muted: #9ca3af;
+  --bg-main: #020617;      /* Deep navy black */
+  --bg-surface: #0a0f1e;   /* Mid-layer surface */
+  --bg-card: #0d1529;      /* Elevated cards */
+  --border: #1f2a3a;
+
+  --accent: #3abdf8;       /* Refined cyan */
+  --accent-soft: #5cd5ff;
+
+  --text-main: #e6e9ee;
+  --text-muted: #97a3b3;
 }
+
 
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -101,7 +105,7 @@ header {
   padding: 8px 12px;
   border-radius: 999px;
   border: 1px solid var(--border);
-  background-color: var(--bg-main);
+  background-color: var(--bg-surface);
   color: var(--text-main);
   font-size: 14px;
 }
@@ -124,7 +128,7 @@ header {
 .category-bar {
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
-  background-color: var(--bg-main);
+  background-color: var(--bg-surface);
 }
 
 .category-list {
@@ -261,9 +265,10 @@ main {
   display: inline-block;
   padding: 6px 10px;
   border-radius: 999px;
-  border: 1px solid var(--accent);
+  border: 1px solid var(--accent-soft);
   font-size: 12px;
-  color: var(--accent);
+  color: var(--accent-soft);
+  background-color: transparent;
 }
 
 .product-btn:hover {
@@ -292,7 +297,7 @@ main {
   margin-bottom: 10px;
   border-radius: 6px;
   border: 1px solid var(--border);
-  background-color: var(--bg-main);
+  background-color: var(--bg-surface);
   color: var(--text-main);
   font-size: 13px;
 }
